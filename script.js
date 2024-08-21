@@ -72,5 +72,35 @@ console.log(`After splice (2, 1)`, myProducts);
 const concatenatedArrays = myProducts.concat(subsetOfMyProducts);
 console.log(`After concat(subsetOfMyProducts)`, concatenatedArrays);
 
+/**Objects
+ *  In JavaScript, obiectele sunt structuri de date complexe care permit stocarea si organizarea datelor in perechi cheie-valoare. 
+ * Un obiect poate contine diferite tipuri de date, inclusiv alte obiecte, functii si array-uri. 
+ * Obiectele sunt fundamentale in JavaScript si sunt folosite pe scara larga in programare pentru a reprezenta si manipula informatii complexe.
+Un obiect este definit utilizand paranteze {} si poate contine zero sau mai multe perechi cheie-valoare despartite prin virgula.
+ */
 
+let person = {
+    name:"John",
+    surname: "Doe",
+    address: {
+        street: "Cetatii",
+        number: 21,
+        flat: "B1",
+        building: "7B",
+        zipCode: "100203",
+        city: "Cluj-Napoca",
+        county: "Cluj",
+        country: "Romania"
+    },
+    age: 30
+};
 
+console.log(`perspn:`, person);
+console.log(`nume persoana: ${person.name}`);
+console.log(`cod postal: ${person.address.zipCode}`);
+console.log(person.flat);// undefined property
+console.log(person.address.flat);
+
+// brackets notation
+
+console.log(`person surname: ${person["surname"]}`);
