@@ -48,7 +48,10 @@ console.log(`myProducts after unshift the first item `, myProducts);
 myProducts.shift();
 console.log(`myProducts after shift the first item `, myProducts);
 
+// indexOf- gasirea indexului unui element din Array
 
+const indexOfPantaloni =myProducts.indexOf("Pantaloni");
+console.log(`Elementul "Pantaloni" se afla in lista la indexul ${indexOfPantaloni}`);
 
 
 
