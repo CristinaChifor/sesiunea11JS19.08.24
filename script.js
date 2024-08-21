@@ -48,10 +48,30 @@ console.log(`myProducts after unshift the first item `, myProducts);
 myProducts.shift();
 console.log(`myProducts after shift the first item `, myProducts);
 
-// indexOf- gasirea indexului unui element din Array
+// indexOf- gasirea indexului unui element din Array; 
+//Returneaza o portiune a array-ului intre indexurile specificate, fara a modifica array-ul original. 
+//Ultimul index (end) nu este inclus in subset.
 
 const indexOfPantaloni =myProducts.indexOf("Pantaloni");
 console.log(`Elementul "Pantaloni" se afla in lista la indexul ${indexOfPantaloni}`);
+
+// slice (start, end)- subset al unui array
+
+const subsetOfMyProducts = myProducts.slice(1, 3);
+console.log(`subset frrom 1 to 3 is`, subsetOfMyProducts);
+
+// splice(start, deleteCount, item1, item2, ...): Modifica continutul array-ului, adaugand elemente la index start stergand un numr de elemente egal cu deleteCount incepand de la index start. 
+
+
+myProducts.splice(2, 1, "Camasa");
+console.log(`After splice (2, 1)`, myProducts);
+
+//concat(): Concateneaza doua sau mai multe array-uri, returnand un array nou.
+//Concatenare de array-uri
+
+const concatenatedArrays = myProducts.concat(subsetOfMyProducts);
+console.log(`After concat(subsetOfMyProducts)`, concatenatedArrays);
+
 
 
 
