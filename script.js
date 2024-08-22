@@ -15,6 +15,15 @@ console.log(typeof undefinedValue);
 
 // Object, Array & Date
 
+/** 1. Array
+ Un array in JavaScript este o structura de date care permite stocarea si accesarea mai multor valori 
+ intr-o singura variabila. 
+ Array-ul este un tip de obiect care poate contine o lista ordonată de valori, 
+ iar fiecare valoare din lista este identificata printr-un index.
+Indexul unui element reprezinta pozitia pe care se afla in array, 
+primul element fiind pe pozitia 0.
+ */
+
 const myProducts = ["Camasa", "Pantaloni", "Manusi"];
 console.log(`myProducts: `, myProducts);
 console.log(`First item in myProducts is ${myProducts[0]}`);
@@ -72,7 +81,7 @@ console.log(`After splice (2, 1)`, myProducts);
 const concatenatedArrays = myProducts.concat(subsetOfMyProducts);
 console.log(`After concat(subsetOfMyProducts)`, concatenatedArrays);
 
-/**Objects
+/**2. Objects
  *  In JavaScript, obiectele sunt structuri de date complexe care permit stocarea si organizarea datelor in perechi cheie-valoare. 
  * Un obiect poate contine diferite tipuri de date, inclusiv alte obiecte, functii si array-uri. 
  * Obiectele sunt fundamentale in JavaScript si sunt folosite pe scara larga in programare pentru a reprezenta si manipula informatii complexe.
@@ -119,6 +128,18 @@ const obj3 = obj1;
 
 console.log(`obj1 === obj2 => ${obj1 === obj2}`);
 console.log(`obj1 === obj3 => ${obj1 === obj3}`);
+
+// Compararea obiectelor dupa proprietati
+
+const areEqual = obj1.a === obj2.a && obj2.b === obj3.b;
+console.log(`Are equal: `, areEqual);
+
+/** 3. Date
+ Obiectul Date in JavaScript este folosit pentru a lucra cu date si ore in aplicatii web. 
+ Acest obiect oferă metode pentru a accesa si manipula data si ora, precum si pentru a efectua operatii cu date specifice
+ */
+
+
 
 
 
