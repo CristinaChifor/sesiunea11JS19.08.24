@@ -95,7 +95,7 @@ let person = {
     age: 30
 };
 
-console.log(`perspn:`, person);
+console.log(`person:`, person);
 console.log(`nume persoana: ${person.name}`);
 console.log(`cod postal: ${person.address.zipCode}`);
 console.log(person.flat);// undefined property
@@ -104,3 +104,21 @@ console.log(person.address.flat);
 // brackets notation
 
 console.log(`person surname: ${person["surname"]}`);
+
+// Modificare valori in obiect
+
+person.name = "Ion";
+console.log(`name:`, person.name);
+console.log(`name: ${person[name]}`);
+
+// Compararea obiectelor
+
+const obj1 = {a: 10, b: true};
+const obj2 = {a: 10, b: true};
+const obj3 = obj1;
+
+console.log(`obj1 === obj2 => ${obj1 === obj2}`);
+console.log(`obj1 === obj3 => ${obj1 === obj3}`);
+
+
+
