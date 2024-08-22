@@ -166,7 +166,7 @@ console.log("luna: ", months[currentMonthIndex]);
 
 console.log(`day of the month: `, date.getDate());
 
-// accesare zi saptamana
+// accesare zi saptamana/ indexul incepe de la 0
 
 console.log(`day of the week: `, date.getDay());
 
