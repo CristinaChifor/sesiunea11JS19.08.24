@@ -144,6 +144,37 @@ console.log(`person: `, person);
  Acest obiect oferă metode pentru a accesa si manipula data si ora, precum si pentru a efectua operatii cu date specifice
  */
 
+ const date = new Date ();
+ console.log(`date:`, date);
+
+ const specificDate = new Date("2022-03-25");
+ console.log(`specificDate: `, specificDate);
+
+ // accesare an
+
+ console.log(`an: `, date.getFullYear());
+
+ // accesare luna
+
+ console.log(`luna: `, date.getMonth());// luna de la indexul 7; indexul incepe de la 0
+
+ const months = ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai"];
+const currentMonthIndex = date.getMonth();
+console.log("luna: ", months[currentMonthIndex]);
+
+// accesare zi luna
+
+console.log(`day of the month: `, date.getDate());
+
+// accesare zi saptamana
+
+console.log(`day of the week: `, date.getDay());
+
+
+
+
+
+
 
 
 
